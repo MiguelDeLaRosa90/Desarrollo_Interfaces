@@ -188,16 +188,16 @@ public class TresEnRaya extends JFrame {
 		});
 		panel_1.add(btnNueva);
 		
-		JButton btnPause = new JButton("PAUSE");
+		JButton btnPause = new JButton("PAUSEEEE");
 		btnPause.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (estado_juego) {
 					//bloquear todos los botones
-					btn1.setEnabled(false);
+					btn1.setEnabled(true);
 					estado_juego = false;
 				}else {
 					if (btn1.getStatus()>0)
-						btn1.setEnabled(true);
+						btn1.setEnabled(false);
 					estado_juego = true;
 				}
 			}
