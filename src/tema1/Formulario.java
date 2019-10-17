@@ -6,6 +6,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import tema2.BotonCargar;
+import tema2.BotonGuardar;
+import tema2.BotonLimpiar;
+
 import javax.swing.JTextField;
 import javax.swing.JRadioButton;
 import javax.swing.JCheckBox;
@@ -174,7 +179,8 @@ public class Formulario extends JFrame {
 		lblElijaALos.setBounds(69, 184, 290, 14);
 		contentPane.add(lblElijaALos);
 		
-		JButton btonLimpiar = new JButton("LIMPIAR");
+		BotonLimpiar btonLimpiar = new BotonLimpiar();
+		btonLimpiar.setText("LIMPIAR");
 		btonLimpiar.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyReleased(KeyEvent e) {
@@ -195,18 +201,18 @@ public class Formulario extends JFrame {
 				BoxBus.setSelected(false);
 			}
 		});
-		btonLimpiar.setBounds(69, 300, 89, 40);
+		btonLimpiar.setBounds(10, 289, 127, 44);
 		contentPane.add(btonLimpiar);
 		
-		JButton btonCargar = new JButton("CARGAR");
+		BotonCargar btonCargar = new BotonCargar();
 		btonCargar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btonCargar.setBounds(199, 300, 89, 40);
+		btonCargar.setBounds(147, 289, 135, 44);
 		contentPane.add(btonCargar);
 		
-		JButton btonGuardar = new JButton("GUARDAR");
+		BotonGuardar btonGuardar = new BotonGuardar();
 		btonGuardar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -225,7 +231,7 @@ public class Formulario extends JFrame {
 					
 					if(BotHombre.isSelected()) {
 						
-						if(BotHombre.getText().equals("Hombre"));{
+						if(BotHombre.getText().equals("Hombreee"));{
 							bw.write("Hombre");
 						}
 					}
@@ -247,7 +253,7 @@ public class Formulario extends JFrame {
 				}
 			}
 		});
-		btonGuardar.setBounds(329, 300, 89, 40);
+		btonGuardar.setBounds(308, 289, 135, 44);
 		contentPane.add(btonGuardar);
 	}
 }
