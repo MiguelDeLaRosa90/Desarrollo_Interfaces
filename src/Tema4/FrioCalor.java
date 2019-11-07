@@ -1,4 +1,4 @@
-package tema3;
+package Tema4;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -52,7 +52,7 @@ public class FrioCalor extends JFrame {
 		mntmNuevo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				
+				OpenCHM.open("Tema4/Manual_Frio_Caliente.chm");
 			}
 		});
 		mntmNuevo.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_MASK));

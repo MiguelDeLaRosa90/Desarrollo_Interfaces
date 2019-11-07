@@ -177,6 +177,14 @@ public class Practica extends JFrame {
 		panel_1.add(lblNombre_1);
 		
 		textField_4 = new JTextField();
+		textField_4.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent e) {
+				String old = textField_5.getText();			
+				old = old.toUpperCase();
+				textField_5.setText(old);
+			}
+		});
 		textField_4.setBounds(94, 39, 125, 20);
 		panel_1.add(textField_4);
 		textField_4.setColumns(10);
@@ -190,6 +198,14 @@ public class Practica extends JFrame {
 		panel_1.add(lblApellidos_1);
 		
 		textField_5 = new JTextField();
+		textField_5.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent e) {
+				String old = textField_6.getText();			
+				old = old.toUpperCase();
+				textField_6.setText(old);
+			}
+		});
 		textField_5.setBounds(94, 75, 125, 20);
 		panel_1.add(textField_5);
 		textField_5.setColumns(10);
